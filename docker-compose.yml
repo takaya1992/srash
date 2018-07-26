@@ -1,0 +1,11 @@
+version: "3.4"
+services:
+  lambda:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command: python functions/srash/driver.py 
+    working_dir: /app
+    restart: always
+    volumes:
+      - ./:/app

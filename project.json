@@ -1,0 +1,8 @@
+{
+  "name": "srash",
+  "description": "",
+  "memory": 128,
+  "timeout": 90,
+  "role": "arn:aws:iam::986186175654:role/checker_lambda_function",
+  "environment": {}
+}
