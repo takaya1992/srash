@@ -1,9 +1,6 @@
-import sys, os
-sys.path.append(os.path.dirname(os.path.abspath(__file__)) + '/lib')
-
 import json
 
-import main
+import lambda_function
 
 f = open('event.json', 'r')
 event = json.load(f)
@@ -15,4 +12,4 @@ print(event)
 print()
 
 print('result')
-print(main.handle(event, {}))
+print(lambda_function.lambda_handler(event, {}))

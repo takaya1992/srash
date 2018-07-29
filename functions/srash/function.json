@@ -1,0 +1,6 @@
+{
+    "name": "srash",
+    "runtime": "python3.6",
+    "memory": 128,
+    "handler": "lambda_function.lambda_handler"
+}

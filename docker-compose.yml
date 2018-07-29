@@ -4,7 +4,9 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
-    command: python functions/srash/driver.py 
+    command: python functions/srash/driver.py
+    env_file:
+      - .env
     working_dir: /app
     restart: always
     volumes:

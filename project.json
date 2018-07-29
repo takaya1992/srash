@@ -1,8 +1,9 @@
 {
-  "name": "srash",
-  "description": "",
-  "memory": 128,
-  "timeout": 90,
-  "role": "arn:aws:iam::986186175654:role/checker_lambda_function",
-  "environment": {}
+    "name": "srash",
+    "description": "",
+    "runtime": "python3.6",
+    "memory": 128,
+    "timeout": 10,
+    "role": "arn:aws:iam::986186175654:role/service-role/srashLambdaExecRole",
+    "environment": {}
 }
